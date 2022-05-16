@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل ادمین</title>
+    <script src="https://kit.fontawesome.com/e7ad2b80eb.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/media400.css">
+    <link rel="stylesheet" href="css/media425.css">
+    <link rel="stylesheet" href="css/media768.css">
+    <link rel="stylesheet" href="css/media1024.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!----------------------------------------------------------------------header-->
+
+     <section id="header">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="welcom">
+                    <ul >
+                        <li>
+                            <span>به فروشگاه خوش آمدید</span>
+                        </li>
+                        <li>
+                            <a href="login.html"><i class="fas fa-lock"></i>ورود</a>
+                        </li>
+                        <li>
+                            <a href="register.html"><i class="fas fa-user"></i>ثبت نام</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul >
+                        <li>
+                            <i class="fab fa-facebook-f" title="facebook"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-telegram-plane" title="telegram"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram" title="instagram"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter" title="twitter"></i>
+                        </li>
+                    </ul>  
+                </div>
+            </div>
+        </div>
+     </section> 
+     <!-----------------------------------------------search&shopping basket-->
+     <section class="container p-1 mt-2">
+         <div class="row">
+             <div class="col-sm-12 col-md-2">
+                 <div class="logo">
+                     <a href="#"><img src="img/logo.png" alt="logo" class="image-fluid img-logo"></a>
+                 </div>
+             </div>  
+             <div class="col-12 col-md-8">
+                 <form class="mt-3">
+                     <div class="form-row">
+                         <div class="col-10 main-search">
+                             <input type="search" class="form-control" placeholder="عنوان مورد نظر را جستجو کنید...">
+                         </div>
+                         <div class="col-2">
+                             <input type="button" class="btn btn-success search-btn" value="جستجو">
+                         </div>
+                     </div>
+                 </form>
+             </div>
+             <div class="col-sm-12 col-md-2 sell-bas">
+                 <button class="btn btn-primary"><span class="fas fa-shopping-basket"></span>سبد خرید<span class="badge badge-light">0</span></button>
+             </div>
+         </div>
+     </section>
+     <!---------------------------------------------main navbar-->
+     <section class="main-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light px-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html"><i class="fas fa-home mx-1"></i>خانه</a>
+                    </li>
+                    <li class="nav-item dropdown menu-area">
+                      <a class="nav-link dropdown-toggle" href="#" id="public" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        عمومی
+                      </a>
+                      <div class="dropdown-menu mega-area" aria-labelledby="public">
+                       <div class="row">
+                           <div class="col-12 col-md-3">
+                               <a href="books.html" class="dropdown-item">ادبیات</a>
+                               <a href="books.html" class="dropdown-item">سیاست</a>
+                               <a href="books.html" class="dropdown-item">اقتصاد</a>
+                               <a href="books.html" class="dropdown-item">سینما</a>
+                               <a href="books.html" class="dropdown-item">تاریخ</a>
+                               <a href="books.html" class="dropdown-item">هنر</a>
+                           </div>
+                           <div class="col-12 col-md-3">
+                                <a href="books.html" class="dropdown-item">سبک زندگی</a>
+                                <a href="books.html" class="dropdown-item">روانشناسی</a>
+                                <a href="books.html" class="dropdown-item">زندگی نامه</a>
+                                <a href="books.html" class="dropdown-item">فلسفه</a>
+                                <a href="books.html" class="dropdown-item">طنز</a>
+                                <a href="books.html" class="dropdown-item">علوم اجتماعی</a>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <a href="books.html" class="dropdown-item">کامپیوتر</a>
+                                <a href="books.html" class="dropdown-item">کسب و کار وتجارت</a>
+                                <a href="books.html" class="dropdown-item">مذهبی</a>
+                                <a href="books.html" class="dropdown-item">ورزشی</a>
+                                <a href="books.html" class="dropdown-item">حقوقی</a>
+                                <a href="books.html" class="dropdown-item">پزشکی</a>
+                            </div>
+                            <div class="col-12 col-md-3 text-center">
+                                <img class="img-fluid w-75" src="img/public.jpg">
+                           </div>
+                       </div>
+                       <div class="dropdown-divider"></div>
+                       <div class="text-center">
+                           <a href="books.html" class="btn btn-lg btn-primary">بیشتر</a>
+                       </div>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown menu-area">
+                        <a class="nav-link dropdown-toggle" href="books.html" id="public" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          کودک و نوجوان
+                        </a>
+                        <div class="dropdown-menu mega-area" aria-labelledby="public">
+                         <div class="row">
+                             <div class="col-12 col-md-3">
+                                 <a href="books.html" class="dropdown-item">داستان</a>
+                                 <a href="books.html" class="dropdown-item">کمیک و داستان مصور</a>
+                                 <a href="books.html" class="dropdown-item">رنگ آمیزی</a>
+                                 <a href="books.html" class="dropdown-item">آموزش اعداد</a>
+                                 <a href="books.html" class="dropdown-item">آموزش الفبای فارسی</a>
+                                 <a href="books.html" class="dropdown-item">آموزش الفبای انگلیسی</a>
+                             </div>
+                             <div class="col-12 col-md-3">
+                                  <a href="books.html" class="dropdown-item">شعر </a>
+                                  <a href="books.html" class="dropdown-item">فکری و آموزشی</a>
+                                  <a href="books.html" class="dropdown-item">علمی و تخیلی</a>
+                                  <a href="books.html" class="dropdown-item">سرگرمی</a>
+                                  
+                              </div>
+                              <div class="col-12 col-md-3">
+                                 
+                              </div>
+                              <div class="col-12 col-md-3 text-center">
+                                   <img class="img-fluid w-75" src="img/baby.png">
+                              </div>
+                         </div>
+                         <div class="dropdown-divider"></div>
+                         <div class="text-center">
+                             <a href="books.html" class="btn btn-lg btn-primary">بیشتر</a>
+                         </div>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown menu-area">
+                        <a class="nav-link dropdown-toggle" href="books.html" id="public" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          کتب دانشگاهی
+                        </a>
+                        <div class="dropdown-menu mega-area" aria-labelledby="public">
+                         <div class="row">
+                             <div class="col-12 col-md-3">
+                                 <a href="books.html" class="dropdown-item">ادبیات</a>
+                                 <a href="books.html" class="dropdown-item">کامپیوتر</a>
+                                 <a href="books.html" class="dropdown-item">اقتصاد</a>
+                                 <a href="books.html" class="dropdown-item">سینما</a>
+                                 <a href="books.html" class="dropdown-item">تاریخ</a>
+                                 <a href="books.html" class="dropdown-item">هنر</a>
+                             </div>
+                             <div class="col-12 col-md-3">
+                                  <a href="books.html" class="dropdown-item">عمران</a>
+                                  <a href="books.html" class="dropdown-item">روانشناسی</a>
+                                  <a href="books.html" class="dropdown-item">مکانیک</a>
+                                  <a href="books.html" class="dropdown-item">فلسفه</a>
+                                  <a href="books.html" class="dropdown-item">روزنامه نگاری</a>
+                                  <a href="books.html" class="dropdown-item">علوم اجتماعی</a>
+                              </div>
+                              <div class="col-12 col-md-3">
+                                  <a href="books.html" class="dropdown-item">حسابداری</a>
+                                  <a href="books.html" class="dropdown-item">علوم تربیتی</a>
+                                  <a href="books.html" class="dropdown-item">پرستاری</a>
+                                  <a href="books.html" class="dropdown-item">مدیریت</a>
+                                  <a href="books.html" class="dropdown-item">حقوق</a>
+                                  <a href="books.html" class="dropdown-item">پزشکی</a>
+                              </div>
+                              <div class="col-12 col-md-3 text-center">
+                                   <img class="img-fluid w-75" src="img/univ.jpg">
+                              </div>
+                         </div>
+                         <div class="dropdown-divider"></div>
+                         <div class="text-center">
+                             <a href="books.html" class="btn btn-lg btn-primary">بیشتر</a>
+                         </div>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown menu-area">
+                        <a class="nav-link dropdown-toggle" href="books.html" id="public" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          کمک درسی
+                        </a>
+                        <div class="dropdown-menu mega-area" aria-labelledby="public">
+                         <div class="row">
+                             <div class="col-12 col-md-3">
+                                 <a href="books.html" class="dropdown-item">ادبیات</a>
+                                 <a href="books.html" class="dropdown-item">ریاضی</a>
+                                 <a href="books.html" class="dropdown-item">اقتصاد</a>
+                                 <a href="books.html" class="dropdown-item">سینما</a>
+                                 <a href="books.html" class="dropdown-item">تاریخ</a>
+                                 <a href="books.html" class="dropdown-item">هنر</a>
+                             </div>
+                             <div class="col-12 col-md-3">
+                                  <a href="books.html" class="dropdown-item">جغرافی</a>
+                                  <a href="books.html" class="dropdown-item">روانشناسی</a>
+                                  <a href="books.html" class="dropdown-item">زیست شناسی</a>
+                                  <a href="books.html" class="dropdown-item">فلسفه</a>
+                                  <a href="books.html" class="dropdown-item">مطالعات اجتماعی</a>
+                                  <a href="books.html" class="dropdown-item">علوم اجتماعی</a>
+                              </div>
+                              <div class="col-12 col-md-3">
+                                  <a href="books.html" class="dropdown-item">کامپیوتر</a>
+                                  <a href="books.html" class="dropdown-item">کسب و کار وتجارت</a>
+                                  <a href="books.html" class="dropdown-item">دین وزندگی</a>
+                                  <a href="books.html" class="dropdown-item">گسسته</a>
+                                  <a href="books.html" class="dropdown-item">دیفرانسیل</a>
+                                  <a href="books.html" class="dropdown-item">عروض و قافیه</a>
+                              </div>
+                              <div class="col-12 col-md-3 text-center">
+                                   <img class="img-fluid w-75 h-100" src="img/konkur.jpg">
+                              </div>
+                         </div>
+                         <div class="dropdown-divider"></div>
+                         <div class="text-center">
+                             <a href="books.html" class="btn btn-lg btn-primary">بیشتر</a>
+                         </div>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown menu-area">
+                        <a class="nav-link dropdown-toggle" href="books.html" id="public" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          زبان های خارجی
+                        </a>
+                        <div class="dropdown-menu mega-area" aria-labelledby="public">
+                         <div class="row">
+                             <div class="col-12 col-md-3">
+                                 <a href="books.html" class="dropdown-item">انگلیسی</a>
+                                 <a href="books.html" class="dropdown-item">ایتالیایی</a>
+                                 <a href="books.html" class="dropdown-item">اسپانیایی</a>
+                                 <a href="books.html" class="dropdown-item">ترکی</a>
+                                 <a href="books.html" class="dropdown-item">عربی</a>
+                                 <a href="books.html" class="dropdown-item">فرانسوی</a>
+                             </div>
+                             <div class="col-12 col-md-3">
+                                  <a href="books.html" class="dropdown-item">آلمانی</a>
+                                  <a href="books.html" class="dropdown-item">هندی</a>
+                                  <a href="books.html" class="dropdown-item"> چینی</a>
+                                  <a href="books.html" class="dropdown-item">کره ای</a>
+                                  
+                              </div>
+                              <div class="col-12 col-md-3">
+                                 
+                              </div>
+                              <div class="col-12 col-md-3 text-center">
+                                   <img class="img-fluid w-75 h-100" src="img/zaban.jpg">
+                              </div>
+                         </div>
+                         <div class="dropdown-divider"></div>
+                         <div class="text-center">
+                             <a href="books.html" class="btn btn-lg btn-primary">بیشتر</a>
+                         </div>
+                        </div>
+                      </li>
+                  </ul>
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="search.html" class="btn btn-info btn-block">جستجوی پیشرفته</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+     </section>
+ <section class="panel container">
+    .<div class="card py-5">
+        <div class="panel-img">
+           <img class="card-img-top " src="img/user.jpg" alt="user">
+        </div>
+        <div class="card-body">
+            <div class="em form-group row">
+                <label for="em" class="col-12 col-md-2">
+                    ایمیل :
+                </label>
+                <input type="text" class="col-12 col-md-8 border-0" value="m.f.lashkari@gmail.com">
+            </div>
+            <div class="em form-group row">
+                <label for="em" class="col-12 col-md-2">
+                    شماره تلفن :
+                </label>
+                <input type="text" class="col-6 col-md-4 border-0" id="number" value="0914744">
+                <input type="button" class="col-6 col-md-4 border-0 btn ch-phone" data-toggle="modal" data-target="#phoneChe" value="تغییر شماره تلفن">
+                <div class="modal fade" id="phoneChe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">تغییر شماره تلفن</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <input type="text" id="phoneEnter" class="form-control" placeholder="شماره را وارد کنید...">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                          <button type="button" id="phoneSub" class="btn btn-primary">ذخیره</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="em form-group row">
+                <label for="em" class="col-12 col-md-2">
+                    جنسیت :
+                </label>
+                <div class="col-12 col-md-8">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sex">
+                        <label class="form-check-label" for="inlineRadio1">زن</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sex">
+                        <label class="form-check-label" for="inlineRadio2">مرد</label>
+                    </div>
+                </div>
+            </div>
+            <div class="em form-group row">
+                <label for="em" class="col-12 col-md-2">
+                    نام :
+                </label>
+                <input type="text" class="col-12 col-md-10 form-control" value="محمد">
+            </div>
+            <div class="em form-group row">
+                <label for="em" class="col-12 col-md-2">
+                    نام خانوادگی :
+                </label>
+                <input type="text" class="col-12 col-md-10 form-control" value="لشکری">
+            </div>
+            <div class="em form-group row">
+                <label for="em" class="col-12 col-md-2">
+                     استان :
+                </label>
+                <input type="text" class="col-12 col-md-10 form-control" value="آذربایجان شرقی">
+            </div>
+            <div class="em form-group row">
+                <label for="em" class="col-12 col-md-2">
+                     شهرستان :
+                </label>
+                <input type="text" class="col-12 col-md-10 form-control" value="هریس">
+            </div>
+            <div class="em form-group row">
+                <label for="em" class="col-12 col-md-2">
+                     تلفن ثابت :
+                </label>
+                <input type="text" class="col-12 col-md-10 form-control" value="0414">
+            </div>
+            <div class="em form-group row">
+                <label for="em" class="col-12 col-md-2">
+                     آدرس :
+                </label>
+                <input type="text" class="col-12 col-md-10 form-control" value="شهر ">
+            </div>
+            <div class="em form-group row">
+                <label for="em" class="col-12 col-md-2">
+                     کد پستی :
+                </label>
+                <input type="text" class="col-12 col-md-10 form-control" value=" 5398">
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success btn-lg px-5">ذخیره</button>
+            </div>
+            </div>
+        </div>
+    </div>
+ </section>
+
+     <!-----------------------------------------------------------------------post-->
+ <section class="container p-5 post">
+    <div class="row m-auto">
+      <div class="col-4">
+        <a href="#"><i class="fa fa-certificate ml-4"></i>ضمانت نامه ارسال</a>
+      </div>
+      <div class="col-4">
+       <a href="#"><i class="fas fa-credit-card ml-4"></i>خرید از طریق شتاب</a>
+     </div>
+     <div class="col-4">
+       <a href="#"><i class="fa fa-truck ml-4"></i>روش های ارسال</a>
+     </div>
+    </div>
+  </section>
+ 
+ <!---------------------------------------------------------------------------footer-->
+ 
+ <section class="footer bg-secondary">
+   <div class="container p-5">
+   <div class="row">
+     <div class="col-sm-12 col-md-4">
+       <h4>تماس با ما</h4>
+       <ul>
+         <li><h5><i class="fas fa-phone-volume ml-2"></i>شماره تماس</h5></li>
+         <li>09146932744</li>
+         <li>ایمیل</li>
+         <li><a href="#">m.f.lashkari@gmail.com</a></li>
+       </ul>
+       <div class="social">
+         <ul >
+             <li>
+                 <i class="fab fa-facebook-f" title="facebook"></i>
+             </li>
+             <li>
+                 <i class="fab fa-telegram-plane" title="telegram"></i>
+             </li>
+             <li>
+                 <i class="fab fa-instagram" title="instagram"></i>
+             </li>
+             <li>
+                 <i class="fab fa-twitter" title="twitter"></i>
+             </li>
+         </ul>  
+     </div>
+       
+     </div>
+     <div class="col-sm-12 col-md-4">
+       <h4>دسته بندی موضوعی</h4>
+       <ul>
+         <li><a href="#">عمومی</a></li>
+         <li><a href="#">کودک و نوجوان</a></li>
+         <li><a href="#">کتب دانشگاهی</a></li>
+         <li><a href="#">کمک درسی</a></li>
+         <li><a href="#">زبانهای خارجی</a></li>
+       </ul>
+     </div>
+     <div class="col-sm-12 col-md-4">
+       <h4>لینک های مفید</h4>
+       <ul>
+         <li><a href="#">راهنمای خرید</a></li>
+         <li><a href="#">سوالات متداول</a></li>
+         <li><a href="#">ثبت شکایات</a></li>
+         <li><a href="#">قوانین و مقررات</a></li>
+         <li><a href="#"> خرید عمده</a></li>
+       </ul>
+     </div>
+   </div>
+   <hr class="bg-light mb-5">
+   <div class="text-light">
+     <div class="row">
+       <div class="col-sm-12 col-md-4"></div>
+       <div class="col-sm-12 col-md-8">
+     <h1 class="p-2">درباره ما</h1>
+     <hr style="border-bottom: 1px solid rgba(255,255,255,.3);">
+     <blockquote>
+       همین چند وقت پیش (اواسط سال 1393) بود که چند تا جوان، صمیمی، پرانرژی و لبریز از ایده، به‌عنوان یک دارودسته‌ی تبعیدیِ کرمِکتاب دور هم جمع شدیم تا به رویای معرفی و فرستادن کتاب به دوردست‌ترین کتاب‌خوارهای ایران برسیم. ما نه عینک گرد می‌زنیم، نه سبیل بلند داریم (به جز یک مورد) و نه زیاد اهل کافه رفتنیم.
+ 
+ ما تیم بچه‌معمولی‌های 30‌بوک هستیم: ذله‌کننده‌ی سرمایه‌گذارهای دست‌به‌عصا، حامیان تمام‌عیار احمقانه‌ترین و جسورانه‌ترین ایده‌ها، و کَنه‌ی حل غیرممکن‌ترین مسئله‌ها. اگر جوانید (دل‌تان را می‌گوییم!)، یک جای خالی هم برای شما توی بوفه کنار گذاشته‌ایم. به دنیای 30بوک خوش آمدید!
+     </blockquote>
+   </div>
+   </div>
+   </div>
+ </div>
+ </section>
+
+
+ <script src="js/jquery.min.js"></script>  
+<script src="js/proper.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/script.js"></script>
+</body>
+</html>

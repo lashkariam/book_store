@@ -1,0 +1,12 @@
+@media screen and (min-width: 768px){
+    .post a{
+        font-size: 15px !important;
+        color: gray;
+       }
+    
+       .post i{
+        font-size: 20px !important; 
+    }
+
+
+}

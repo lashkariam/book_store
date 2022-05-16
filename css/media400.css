@@ -1,0 +1,24 @@
+@media screen and (max-width: 425px) {
+    #car .carousel-item img{
+        height: 96px;
+    }
+ 
+    #mag .carousel-item img{
+     height: 96px;
+ }
+
+ .post a{
+    font-size: 10px !important;
+    color: gray;
+   }
+
+   .post i{
+    font-size: 15px !important; 
+}
+
+ .login img{
+    width: 100%;
+    height: 75%;
+    border-radius:0 !important;
+}
+   }
